@@ -48,7 +48,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="container">
       <div className="main">
         <h1>가위바위보 게임</h1>
         <div className="box-area">

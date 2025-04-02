@@ -3,6 +3,12 @@
   margin: 0;
 }
 
+body {
+  background-image: url("https://marketplace.canva.com/EAGOi4Jk6Vc/1/0/1600w/canva-grey-white-orange-video-centric-element-centric-video-background-TJdQfmAntVM.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -15,7 +21,7 @@
   flex-direction: row;
 }
 
-.main>h1 {
+.main > h1 {
   position: relative;
   right: 10px;
   margin-bottom: 20px;
@@ -38,7 +44,7 @@
   align-items: center;
   width: 500px;
   height: 500px;
-  border: 5px solid #0066FF;
+  border: 5px solid #0066ff;
   margin-right: 20px;
 }
 
@@ -82,15 +88,49 @@
   top: 0;
   right: 15px;
   border: none;
-  background-color: #fff;
+  background-color: transparent;
   font-size: 50px;
 }
 
 .main button:hover {
-  color: #0066FF;
+  color: #0066ff;
   transform: scale(1.3);
 }
 
 .main button:first-child i {
   transform: rotate(90deg);
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    margin-top: 100px;
+  }
+
+  .main > h1 {
+    right: auto;
+    font-size: 24px;
+  }
+
+  /* .box-area {
+    flex-direction: column;
+  } */
+
+  .box{
+    width: 100%;
+    height: 250px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  .box h1 {
+    font-size: 20px;
+  }
+
+  .item-img {
+    width: 150px;
+  }
+
+  .main button {
+    right: 5px;
+  }
 }
