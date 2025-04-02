@@ -9,6 +9,10 @@ body {
   background-size: cover;
 }
 
+.container {
+  height: 100vh;
+}
+
 .main {
   display: flex;
   flex-direction: column;
